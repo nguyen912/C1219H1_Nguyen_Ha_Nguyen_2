@@ -31,9 +31,7 @@ export class CustomerListComponent implements OnInit {
           this.customers = this.customers.filter(c => c !== customer);
         })
     }
-    // else {
-    //   this.getCustomers();
-    // }
+
   };
 
 }

@@ -1,0 +1,81 @@
+<hr>
+<h3 class="d-flex justify-content-center">employee List</h3>
+<div class="row justify-content-between">
+  <button type="button" class="btn btn-success ml-3" [routerLink]="['/employee-create']">Add employee</button>
+
+  <!-- Search form -->
+  <div class="input-group  mr-3 w-75">
+    <input [(ngModel)]="term" type="text" class="form-control" placeholder="Search employee">
+    <div class="input-group-append">
+      <button class="btn btn-primary" type="button">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+  </div>
+</div>
+<hr>
+
+<!--TABLE-->
+<table>
+  <tr>
+    <th>Employee ID</th>
+    <th>Full Name</th>
+    <th>Position</th>
+    <th>Degree</th>
+    <th>Department</th>
+    <th>Date of Birth</th>
+    <th>ID Card Number</th>
+    <th>Salary</th>
+    <th>Phone Number</th>
+    <th>Email</th>
+    <th>Address</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+  <tr *ngFor="let employee of employees |filter:term | paginate: { itemsPerPage: 5, currentPage: p}">
+    <td>{{employee.id}}</td>
+    <td>{{employee.fullName}}</td>
+    <ng-container [ngSwitch]="employee.positionId">
+      <td *ngSwitchCase="1">Director</td>
+      <td *ngSwitchCase="2">Manager</td>
+      <td *ngSwitchCase="3">Leader</td>
+      <td *ngSwitchCase="4">Employee</td>
+      <td *ngSwitchCase="5">Trainee</td>
+    </ng-container>
+    <ng-container [ngSwitch]="employee.degreeId">
+      <td *ngSwitchCase="1">Master</td>
+      <td *ngSwitchCase="2">Bachelor</td>
+      <td *ngSwitchCase="3">Associate</td>
+      <td *ngSwitchCase="4">Undergraduate</td>
+    </ng-container>
+    <ng-container [ngSwitch]="employee.departmentId">
+      <td *ngSwitchCase="1">Services</td>
+      <td *ngSwitchCase="2">Legal</td>
+      <td *ngSwitchCase="3">Research and Development</td>
+      <td *ngSwitchCase="4">Training</td>
+      <td *ngSwitchCase="5">Business Development</td>
+      <td *ngSwitchCase="6">Sales</td>
+      <td *ngSwitchCase="7">Marketing</td>
+      <td *ngSwitchCase="8">Support</td>
+    </ng-container>
+    <td>{{employee.dob |date: 'dd/MM/yyyy'}}</td>
+    <td>{{employee.idCardNum}}</td>
+    <td>{{employee.salary}}</td>
+    <td>{{employee.phoneNumber}}</td>
+    <td>{{employee.email}}</td>
+    <td>{{employee.address}}</td>
+
+    <td>
+      <a class="btn text-primary" [routerLink]="['/employee-edit/'+employee.id]">
+        <i class="fa fa-edit"></i>
+      </a>
+    </td>
+    <td>
+      <a class="btn text-danger" (click)="deleteEmployee(employee)">
+        <i class="fa fa-trash"></i>
+      </a>
+    </td>
+
+  </tr>
+</table>
+<pagination-controls (pageChange)="p = $event"></pagination-controls>

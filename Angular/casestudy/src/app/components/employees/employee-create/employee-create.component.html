@@ -1,0 +1,102 @@
+
+<form (ngSubmit)="onSubmit();" [formGroup]="createEmployeeForm">
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Full Name</label>
+    <div class="col-sm-10">
+      <input class="form-control" placeholder="Full Name" formControlName="fullName">
+      <p *ngIf="createEmployeeForm.controls.fullName.errors?.required && createEmployeeForm.controls.fullName.touched" class="text-danger">Enter name please!</p>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Position</label>
+    <div class="col-sm-10">
+      <select class="form-control" formControlName="positionId" >
+        <option value=1>Director</option>
+        <option value=2>Manager</option>
+        <option value=3>Leader</option>
+        <option value=4 [selected]="true">Employee</option>
+        <option value=5>Trainee</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Degree</label>
+    <div class="col-sm-10">
+      <select class="form-control" formControlName="degreeId">
+        <option value=1>Master</option>
+        <option value=2 [selected]="true">Bachelor</option>
+        <option value=3>Associate</option>
+        <option value=4>Undergraduate</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Degree</label>
+    <div class="col-sm-10">
+      <select class="form-control" formControlName="departmentId">
+        <option value=1>Services</option>
+        <option value=2>Legal</option>
+        <option value=3>Research and Development</option>
+        <option value=4>Training</option>
+        <option value=5>Business Development</option>
+        <option value=6 [selected]="true">Sales</option>
+        <option value=7>Marketing</option>
+        <option value=8>Support</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Date of Birth</label>
+    <div class="col-sm-10">
+      <mat-form-field>
+        <input [max] = "maxDate" [min]="minDate" class="form-control" placeholder="Choose your birthday" formControlName="dob" matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker startView="year" [startAt]="startDate"></mat-datepicker>
+      </mat-form-field>
+      <p *ngIf="createEmployeeForm.controls.dob.errors?.required && createEmployeeForm.controls.dob.touched" class="text-danger">Enter birth please!</p>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">ID Card Number</label>
+    <div class="col-sm-10">
+      <input class="form-control" placeholder="ID Card Number" formControlName="idCardNum">
+      <p *ngIf="createEmployeeForm.controls.idCardNum.errors?.required && createEmployeeForm.controls.idCardNum.touched" class="text-danger">Enter id Card Num please!</p>
+      <p *ngIf="createEmployeeForm.controls.idCardNum.errors?.pattern && createEmployeeForm.controls.idCardNum.touched" class="text-danger">Id Card Num is invalid!</p>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Salary</label>
+    <div class="col-sm-10">
+      <input class="form-control" placeholder="Salaryr" formControlName="salary">
+      <p *ngIf="createEmployeeForm.controls.salary.errors?.required && createEmployeeForm.controls.salary.touched" class="text-danger">Enter id Card Num please!</p>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Phone Number</label>
+    <div class="col-sm-10">
+      <input class="form-control" placeholder="Phone Number" formControlName="phoneNumber">
+      <p *ngIf="createEmployeeForm.controls.phoneNumber.errors?.required && createEmployeeForm.controls.phoneNumber.touched" class="text-danger">Enter phone number please!</p>
+      <p *ngIf="createEmployeeForm.controls.phoneNumber.errors?.pattern && createEmployeeForm.controls.phoneNumber.touched" class="text-danger">Phone number is invalid!</p>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input class="form-control" placeholder="Email" formControlName="email">
+      <p *ngIf="createEmployeeForm.controls.email.errors?.required && createEmployeeForm.controls.email.touched" class="text-danger">Enter email please!</p>
+      <p *ngIf="createEmployeeForm.controls.email.errors?.email && createEmployeeForm.controls.email.touched" class="text-danger">Email is invalid!</p>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Address</label>
+    <div class="col-sm-10">
+      <input class="form-control" placeholder="Address" formControlName="address">
+      <p *ngIf="createEmployeeForm.controls.address.errors?.required && createEmployeeForm.controls.address.touched" class="text-danger">Enter address please!</p>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form>

@@ -13,13 +13,19 @@ import {NgxPaginationModule} from "ngx-pagination";
 import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MaterialModule} from "./material.module";
+import { EmployeeListComponent } from './components/employees/employee-list/employee-list.component';
+import { EmployeeCreateComponent } from './components/employees/employee-create/employee-create.component';
+import { EmployeeEditComponent } from './components/employees/employee-edit/employee-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CustomerListComponent,
     CustomerCreateComponent,
-    CustomerEditComponent
+    CustomerEditComponent,
+    EmployeeListComponent,
+    EmployeeCreateComponent,
+    EmployeeEditComponent
   ],
   imports: [
     BrowserModule,

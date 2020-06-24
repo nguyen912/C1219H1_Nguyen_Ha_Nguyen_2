@@ -1,6 +1,46 @@
 {
   "customers": [
     {
+      "id": 1,
+      "customerTypeId": 3,
+      "fullName": "Floris Snodin",
+      "dob": "1999-03-27",
+      "idCardNum": 617184231,
+      "phoneNumber": "439 718 8183",
+      "email": "fsnodin0@hud.gov",
+      "address": "8120 Pennsylvania Circle Vinh"
+    },
+    {
+      "id": 2,
+      "customerTypeId": 1,
+      "fullName": "Alayne Reeds",
+      "dob": "1988-01-27",
+      "idCardNum": 613339347,
+      "phoneNumber": "118 231 0143",
+      "email": "areeds1@dailymotion.com",
+      "address": "16349 Milwaukee Terrace Quang Ngai"
+    },
+    {
+      "id": 3,
+      "customerTypeId": 1,
+      "fullName": "Marshall Lunt",
+      "dob": "1982-08-23",
+      "idCardNum": 138324817,
+      "phoneNumber": "710 417 7446",
+      "email": "mlunt2@yahoo.co.jp",
+      "address": "6110 Maywood Lane Quang Tri"
+    },
+    {
+      "id": 4,
+      "customerTypeId": 1,
+      "fullName": "Hansiain Balwin",
+      "dob": "1962-07-03",
+      "idCardNum": 119668368,
+      "phoneNumber": "164 112 2161",
+      "email": "hbalwin3@gov.uk",
+      "address": "4 Waubesa Hill Da Nang"
+    },
+    {
       "id": 5,
       "customerTypeId": 2,
       "fullName": "Colleen Goatcher",
@@ -11,14 +51,14 @@
       "address": "22 Eastlawn Avenue Da Nang"
     },
     {
+      "id": 6,
+      "customerTypeId": 1,
       "fullName": "Silvia Hawkey",
       "dob": "1964-07-29",
       "idCardNum": 231273470,
       "phoneNumber": "983 712 8728",
       "email": "shawkey1@webeden.co.uk",
-      "address": "7 Ronald Regan Trail Da Nang",
-      "customerTypeId": "4",
-      "id": 6
+      "address": "7 Ronald Regan Trail Da Nang"
     },
     {
       "id": 7,
@@ -51,52 +91,29 @@
       "address": "1920 Beilfuss Court Vinh"
     },
     {
+      "id": 10,
+      "customerTypeId": 2,
       "fullName": "Katuscha Delamaine",
       "dob": "2000-07-02",
       "idCardNum": 117010117,
       "phoneNumber": "790 711 7701",
       "email": "kdelamaine9@apache.org",
-      "address": "2018 Southridge Trail Da Nang",
-      "customerTypeId": "2",
-      "id": 10
-    },
-    {
-      "fullName": "Nguyen Ha Nguyen",
-      "dob": "09/01/1998",
-      "idCardNum": "123456789",
-      "phoneNumber": "0900909001",
-      "email": "nhh@gmail.com",
-      "address": "45 hn",
-      "customerTypeId": "3",
-      "id": 12
+      "address": "2018 Southridge Trail Da Nang"
     }
   ],
   "employees": [
     {
-      "id": 1,
-      "fullName": "Bebe Phython",
-      "positionId": 2,
-      "degreeId": 4,
-      "departmentId": 6,
-      "dob": "29/04/1983",
-      "idCardNum": "393669550",
-      "salary": 22000000,
-      "phoneNumber": "6435222024",
-      "email": "mdionis0@elegantthemes.com",
-      "address": "53 Miller Lane Quang Ngai"
-    },
-    {
-      "id": 2,
-      "fullName": "Bebe Phython",
       "positionId": 2,
       "degreeId": 1,
-      "departmentId": 4,
-      "dob": "16/09/1973",
-      "idCardNum": "751760606",
+      "departmentId": "5",
       "salary": 23000000,
+      "fullName": "Bebe Phython",
+      "dob": "09/16/1973",
+      "idCardNum": "751760606",
       "phoneNumber": "2813737073",
       "email": "gricker1@thetimes.co.uk",
-      "address": "1 Melody Lane Da Nang"
+      "address": "1 Melody Lane Da Nang",
+      "id": 2
     },
     {
       "id": 3,
@@ -104,7 +121,7 @@
       "positionId": 5,
       "degreeId": 3,
       "departmentId": 4,
-      "dob": "13/07/1986",
+      "dob": "07/13/1986",
       "idCardNum": "151761459",
       "salary": 2000000,
       "phoneNumber": "8506074558",
@@ -117,7 +134,7 @@
       "positionId": 1,
       "degreeId": 4,
       "departmentId": 6,
-      "dob": "19/08/1995",
+      "dob": "08/19/1995",
       "idCardNum": "651727840",
       "salary": 50000000,
       "phoneNumber": "9768035127",
@@ -313,16 +330,6 @@
       "serviceId": 8,
       "startDay": "10/02/2016",
       "endDay": "22/02/2017",
-      "deposit": 500000,
-      "total": null
-    },
-    {
-      "id": 10,
-      "employeeId": 8,
-      "customerId": 12,
-      "serviceId": 6,
-      "startDay": "18/05/2015",
-      "endDay": "26/10/2018",
       "deposit": 500000,
       "total": null
     }
