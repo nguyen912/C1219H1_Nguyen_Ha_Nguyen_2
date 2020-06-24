@@ -1,0 +1,125 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "serviceId": "DV0001",
+      "serviceName": "Villa",
+      "roomArea": 1500,
+      "floors": 4,
+      "maxPeople": 20,
+      "rentCost": 15000000,
+      "rentTypeId": 1,
+      "status": 2
+    },
+    {
+      "id": 2,
+      "serviceId": "DV0002",
+      "serviceName": "House",
+      "roomArea": 700,
+      "floors": 1,
+      "maxPeople": 5,
+      "rentCost": 7000000,
+      "rentTypeId": 3,
+      "status": 13
+    },
+    {
+      "id": 3,
+      "serviceId": "DV0003",
+      "serviceName": "Room",
+      "roomArea": 180,
+      "floors": 1,
+      "maxPeople": 3,
+      "rentCost": 1800000,
+      "rentTypeId": 2,
+      "status": 25
+    },
+    {
+      "id": 4,
+      "serviceId": "DV0004",
+      "serviceName": "House",
+      "roomArea": 800,
+      "floors": 1,
+      "maxPeople": 10,
+      "rentCost": 8000000,
+      "rentTypeId": 3,
+      "status": 3
+    },
+    {
+      "id": 5,
+      "serviceId": "DV0005",
+      "serviceName": "Room",
+      "roomArea": 160,
+      "floors": 1,
+      "maxPeople": 3,
+      "rentCost": 1600000,
+      "rentTypeId": 4,
+      "status": 8
+    },
+    {
+      "id": 6,
+      "serviceId": "DV0006",
+      "serviceName": "Room",
+      "roomArea": 100,
+      "floors": 1,
+      "maxPeople": 1,
+      "rentCost": 1000000,
+      "rentTypeId": 4,
+      "status": 18
+    },
+    {
+      "id": 7,
+      "serviceId": "DV0007",
+      "serviceName": "House",
+      "roomArea": 700,
+      "floors": 1,
+      "maxPeople": 5,
+      "rentCost": 7000000,
+      "rentTypeId": 1,
+      "status": 1
+    },
+    {
+      "id": 8,
+      "serviceId": "DV0008",
+      "serviceName": "Room",
+      "roomArea": 220,
+      "floors": 1,
+      "maxPeople": 2,
+      "rentCost": 2200000,
+      "rentTypeId": 3,
+      "status": 15
+    },
+    {
+      "id": 9,
+      "serviceId": "DV0009",
+      "serviceName": "Villa",
+      "roomArea": 1300,
+      "floors": 4,
+      "maxPeople": 20,
+      "rentCost": 13000000,
+      "rentTypeId": 4,
+      "status": 7
+    },
+    {
+      "id": 10,
+      "serviceId": "DV0010",
+      "serviceName": "Room",
+      "roomArea": 170,
+      "floors": 1,
+      "maxPeople": 4,
+      "rentCost": 1700000,
+      "rentTypeId": 2,
+      "status": 11
+    },
+    {
+      "serviceId": "DV0011",
+      "serviceName": "Villa",
+      "roomArea": "1000",
+      "floors": "4",
+      "maxPeople": "20",
+      "rentCost": "10000000",
+      "rentTypeId": "2",
+      "status": "1",
+      "id": 11
+    }
+  ]
+}

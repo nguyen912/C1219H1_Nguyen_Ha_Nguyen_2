@@ -1,0 +1,88 @@
+<form (ngSubmit)="onSubmit();" [formGroup]="customerForm">
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Full Name</label>
+    <div class="col-sm-10">
+      <input class="form-control" placeholder="Full Name" formControlName="fullName">
+      <p *ngIf="customerForm.controls.fullName.errors?.required && customerForm.controls.fullName.touched" class="text-danger">Enter name please!</p>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Date of Birth</label>
+    <div class="col-sm-10">
+<!--      <input class="form-control" placeholder="Birthday" formControlName="dob">-->
+      <mat-form-field>
+        <input [max] = "maxDate" [min]="minDate" class="form-control" placeholder="Birthday" formControlName="dob" matInput [matDatepicker]="picker" placeholder="Choose a date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker startView="year" [startAt]="startDate"></mat-datepicker>
+      </mat-form-field>
+      <p *ngIf="customerForm.controls.dob.errors?.required && customerForm.controls.dob.touched" class="text-danger">Enter birth please!</p>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">ID Card Number</label>
+    <div class="col-sm-10">
+      <input class="form-control" placeholder="ID Card Number" formControlName="idCardNum">
+      <p *ngIf="customerForm.controls.idCardNum.errors?.required && customerForm.controls.idCardNum.touched" class="text-danger">Enter id Card Num please!</p>
+      <p *ngIf="customerForm.controls.idCardNum.errors?.pattern && customerForm.controls.idCardNum.touched" class="text-danger">Id Card Num is invalid!</p>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Phone Number</label>
+    <div class="col-sm-10">
+      <input class="form-control" placeholder="Phone Number" formControlName="phoneNumber">
+      <p *ngIf="customerForm.controls.phoneNumber.errors?.required && customerForm.controls.phoneNumber.touched" class="text-danger">Enter phone number please!</p>
+      <p *ngIf="customerForm.controls.phoneNumber.errors?.pattern && customerForm.controls.phoneNumber.touched" class="text-danger">Phone number is invalid!</p>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input class="form-control" placeholder="Email" formControlName="email">
+      <p *ngIf="customerForm.controls.email.errors?.required && customerForm.controls.email.touched" class="text-danger">Enter email please!</p>
+      <p *ngIf="customerForm.controls.email.errors?.email && customerForm.controls.email.touched" class="text-danger">Email is invalid!</p>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Address</label>
+    <div class="col-sm-10">
+      <input class="form-control" placeholder="Address" formControlName="address">
+      <p *ngIf="customerForm.controls.address.errors?.required && customerForm.controls.address.touched" class="text-danger">Enter address please!</p>
+    </div>
+  </div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0">Customer Type</legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" formControlName="customerTypeId" name="customerTypeId" id="diamond" value=1 checked>
+          <label class="form-check-label" for="diamond">
+            Diamond
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" formControlName="customerTypeId" name="customerTypeId" id="gold" value=2>
+          <label class="form-check-label" for="gold">
+            Gold
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <input class="form-check-input" type="radio" formControlName="customerTypeId" name="customerTypeId" id="silver" value=3>
+          <label class="form-check-label" for="silver">
+            Silver
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <input class="form-check-input" type="radio" formControlName="customerTypeId" name="customerTypeId" id="member" value=4>
+          <label class="form-check-label" for="member">
+            Member
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form>

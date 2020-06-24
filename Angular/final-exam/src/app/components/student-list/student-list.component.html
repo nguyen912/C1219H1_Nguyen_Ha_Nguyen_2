@@ -1,0 +1,41 @@
+<hr>
+<h3 class="d-flex justify-content-center">Quản lý sinh viên</h3>
+<div class="row justify-content-between">
+
+</div>
+<hr>
+
+<!--TABLE-->
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Tên sinh viên</th>
+    <th>Tên nhóm</th>
+    <th>Tên đề tài</th>
+    <th>Giáo viên hướng dẫn</th>
+    <th>Email</th>
+    <th>Số điện thoại</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+  <tr *ngFor="let student of students">
+    <td>{{student.id}}</td>
+    <td>{{student.ten_sinh_vien}}</td>
+    <td>{{student.ten_nhom}}</td>
+    <td>{{student.ten_de_tai}}</td>
+    <td>{{student.giao_vien_huong_dan}}</td>
+    <td>{{student.email}}</td>
+    <td>{{student.so_dien_thoai}}</td>
+    <td>
+      <a class="btn text-primary" [routerLink]="['/student-edit/'+student.id]">
+        <i class="fa fa-edit"></i>
+      </a>
+    </td>
+    <td>
+      <a class="btn text-danger" (click)="deleteStudent(student)">
+        <i class="fa fa-trash"></i>
+      </a>
+    </td>
+
+  </tr>
+</table>

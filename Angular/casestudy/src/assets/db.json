@@ -1,0 +1,330 @@
+{
+  "customers": [
+    {
+      "id": 5,
+      "customerTypeId": 2,
+      "fullName": "Colleen Goatcher",
+      "dob": "1992-01-17",
+      "idCardNum": 238710911,
+      "phoneNumber": "494 119 7626",
+      "email": "cgoatcher4@indiegogo.com",
+      "address": "22 Eastlawn Avenue Da Nang"
+    },
+    {
+      "fullName": "Silvia Hawkey",
+      "dob": "1964-07-29",
+      "idCardNum": 231273470,
+      "phoneNumber": "983 712 8728",
+      "email": "shawkey1@webeden.co.uk",
+      "address": "7 Ronald Regan Trail Da Nang",
+      "customerTypeId": "4",
+      "id": 6
+    },
+    {
+      "id": 7,
+      "customerTypeId": 4,
+      "fullName": "Koressa Capenor",
+      "dob": "1960-01-02",
+      "idCardNum": 181964184,
+      "phoneNumber": "930 497 9763",
+      "email": "kcapenor6@stanford.edu",
+      "address": "71131 Mccormick Hill Quang Tri"
+    },
+    {
+      "id": 8,
+      "customerTypeId": 1,
+      "fullName": "Aila Van den Velden",
+      "dob": "1980-12-16",
+      "idCardNum": 208162439,
+      "phoneNumber": "733 373 4733",
+      "email": "avan7@dyndns.org",
+      "address": "43 Ludington Avenue Da Nang"
+    },
+    {
+      "id": 9,
+      "customerTypeId": 3,
+      "fullName": "Thayne Andryushin",
+      "dob": "1987-10-19",
+      "idCardNum": 273021884,
+      "phoneNumber": "249 720 6146",
+      "email": "tandryushin8@gnu.org",
+      "address": "1920 Beilfuss Court Vinh"
+    },
+    {
+      "fullName": "Katuscha Delamaine",
+      "dob": "2000-07-02",
+      "idCardNum": 117010117,
+      "phoneNumber": "790 711 7701",
+      "email": "kdelamaine9@apache.org",
+      "address": "2018 Southridge Trail Da Nang",
+      "customerTypeId": "2",
+      "id": 10
+    },
+    {
+      "fullName": "Nguyen Ha Nguyen",
+      "dob": "09/01/1998",
+      "idCardNum": "123456789",
+      "phoneNumber": "0900909001",
+      "email": "nhh@gmail.com",
+      "address": "45 hn",
+      "customerTypeId": "3",
+      "id": 12
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "fullName": "Bebe Phython",
+      "positionId": 2,
+      "degreeId": 4,
+      "departmentId": 6,
+      "dob": "29/04/1983",
+      "idCardNum": "393669550",
+      "salary": 22000000,
+      "phoneNumber": "6435222024",
+      "email": "mdionis0@elegantthemes.com",
+      "address": "53 Miller Lane Quang Ngai"
+    },
+    {
+      "id": 2,
+      "fullName": "Bebe Phython",
+      "positionId": 2,
+      "degreeId": 1,
+      "departmentId": 4,
+      "dob": "16/09/1973",
+      "idCardNum": "751760606",
+      "salary": 23000000,
+      "phoneNumber": "2813737073",
+      "email": "gricker1@thetimes.co.uk",
+      "address": "1 Melody Lane Da Nang"
+    },
+    {
+      "id": 3,
+      "fullName": "Bebe Phython",
+      "positionId": 5,
+      "degreeId": 3,
+      "departmentId": 4,
+      "dob": "13/07/1986",
+      "idCardNum": "151761459",
+      "salary": 2000000,
+      "phoneNumber": "8506074558",
+      "email": "cjenne2@about.com",
+      "address": "8 Lawn Court Da Nang"
+    },
+    {
+      "id": 4,
+      "fullName": "Bebe Phython",
+      "positionId": 1,
+      "degreeId": 4,
+      "departmentId": 6,
+      "dob": "19/08/1995",
+      "idCardNum": "651727840",
+      "salary": 50000000,
+      "phoneNumber": "9768035127",
+      "email": "towers3@ameblo.jp",
+      "address": "22 Donald Hill Da Nang"
+    },
+    {
+      "id": 5,
+      "fullName": "Bebe Phython",
+      "positionId": 3,
+      "degreeId": 3,
+      "departmentId": 8,
+      "dob": "05/09/1963",
+      "idCardNum": "377947973",
+      "salary": 11000000,
+      "phoneNumber": "4439450415",
+      "email": "aocarran4@sitemeter.com",
+      "address": "1088 Talisman Street Quang Ngai"
+    },
+    {
+      "id": 6,
+      "fullName": "Bebe Phython",
+      "positionId": 2,
+      "degreeId": 3,
+      "departmentId": 3,
+      "dob": "11/01/1971",
+      "idCardNum": "758950722",
+      "salary": 15000000,
+      "phoneNumber": "7058824312",
+      "email": "cbarthrop5@accuweather.com",
+      "address": "2 Sauthoff Court Vinh"
+    },
+    {
+      "id": 7,
+      "fullName": "Bebe Phython",
+      "positionId": 4,
+      "degreeId": 2,
+      "departmentId": 5,
+      "dob": "06/12/1981",
+      "idCardNum": "216861886",
+      "salary": 8000000,
+      "phoneNumber": "2283282856",
+      "email": "aproger6@amazonaws.com",
+      "address": "39 Nevada Junction Vinh"
+    },
+    {
+      "id": 8,
+      "fullName": "Bebe Phython",
+      "positionId": 5,
+      "degreeId": 4,
+      "departmentId": 8,
+      "dob": "14/08/1983",
+      "idCardNum": "441148266",
+      "salary": 2000000,
+      "phoneNumber": "8123834149",
+      "email": "cscarsbrick7@vinaora.com",
+      "address": "173 Florence Alley Da Nang"
+    },
+    {
+      "id": 9,
+      "fullName": "Bebe Phython",
+      "positionId": 2,
+      "degreeId": 1,
+      "departmentId": 6,
+      "dob": "17/09/1962",
+      "idCardNum": "984497885",
+      "salary": 16000000,
+      "phoneNumber": "2695834450",
+      "email": "jjessep8@npr.org",
+      "address": "78 3rd Hill Vinh"
+    },
+    {
+      "id": 10,
+      "fullName": "Bebe Phython",
+      "positionId": 2,
+      "degreeId": 4,
+      "departmentId": 3,
+      "dob": "13/03/1972",
+      "idCardNum": "170863075",
+      "salary": 16000000,
+      "phoneNumber": "1016374878",
+      "email": "tscurrer9@si.edu",
+      "address": "748 Banding Plaza Da Nang"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "serviceName": "Villa",
+      "roomArea": 1500,
+      "floors": 4,
+      "maxPeople": 20,
+      "rentCost": 15000000,
+      "rentTypeId": 1,
+      "status": 2
+    },
+    {
+      "id": 2,
+      "serviceName": "House",
+      "roomArea": 700,
+      "floors": 1,
+      "maxPeople": 5,
+      "rentCost": 7000000,
+      "rentTypeId": 3,
+      "status": 13
+    },
+    {
+      "id": 3,
+      "serviceName": "Room",
+      "roomArea": 180,
+      "floors": 1,
+      "maxPeople": 3,
+      "rentCost": 1800000,
+      "rentTypeId": 2,
+      "status": 25
+    },
+    {
+      "id": 4,
+      "serviceName": "House",
+      "roomArea": 800,
+      "floors": 1,
+      "maxPeople": 10,
+      "rentCost": 8000000,
+      "rentTypeId": 3,
+      "status": 3
+    },
+    {
+      "id": 5,
+      "serviceName": "Room",
+      "roomArea": 160,
+      "floors": 1,
+      "maxPeople": 3,
+      "rentCost": 1600000,
+      "rentTypeId": 4,
+      "status": 8
+    },
+    {
+      "id": 6,
+      "serviceName": "Room",
+      "roomArea": 100,
+      "floors": 1,
+      "maxPeople": 1,
+      "rentCost": 1000000,
+      "rentTypeId": 4,
+      "status": 18
+    },
+    {
+      "id": 7,
+      "serviceName": "House",
+      "roomArea": 700,
+      "floors": 1,
+      "maxPeople": 5,
+      "rentCost": 7000000,
+      "rentTypeId": 1,
+      "status": 1
+    },
+    {
+      "id": 8,
+      "serviceName": "Room",
+      "roomArea": 220,
+      "floors": 1,
+      "maxPeople": 2,
+      "rentCost": 2200000,
+      "rentTypeId": 3,
+      "status": 15
+    },
+    {
+      "id": 9,
+      "serviceName": "Villa",
+      "roomArea": 1300,
+      "floors": 4,
+      "maxPeople": 20,
+      "rentCost": 13000000,
+      "rentTypeId": 4,
+      "status": 7
+    },
+    {
+      "id": 10,
+      "serviceName": "Room",
+      "roomArea": 170,
+      "floors": 1,
+      "maxPeople": 4,
+      "rentCost": 1700000,
+      "rentTypeId": 2,
+      "status": 11
+    }
+  ],
+  "contracts": [
+    {
+      "id": 8,
+      "employeeId": 8,
+      "customerId": 8,
+      "serviceId": 8,
+      "startDay": "10/02/2016",
+      "endDay": "22/02/2017",
+      "deposit": 500000,
+      "total": null
+    },
+    {
+      "id": 10,
+      "employeeId": 8,
+      "customerId": 12,
+      "serviceId": 6,
+      "startDay": "18/05/2015",
+      "endDay": "26/10/2018",
+      "deposit": 500000,
+      "total": null
+    }
+  ]
+}

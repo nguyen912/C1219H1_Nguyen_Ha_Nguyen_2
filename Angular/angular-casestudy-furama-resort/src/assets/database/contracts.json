@@ -1,0 +1,114 @@
+{
+  "contracts": [
+    {
+      "id": 1,
+      "employeeId": "NV0015",
+      "customerId": "KH002",
+      "serviceId": "DV0007",
+      "startDay": "21/11/2018",
+      "endDay": "18/03/2017",
+      "deposit": 500000,
+      "total": null
+    },
+    {
+      "id": 2,
+      "employeeId": "NV0019",
+      "customerId": "KH003",
+      "serviceId": "DV0003",
+      "startDay": "09/05/2015",
+      "endDay": "07/08/2019",
+      "deposit": 500000,
+      "total": null
+    },
+    {
+      "id": 3,
+      "employeeId": "NV009",
+      "customerId": "KH0016",
+      "serviceId": "DV0006",
+      "startDay": "27/10/2016",
+      "endDay": "05/08/2017",
+      "deposit": 500000,
+      "total": null
+    },
+    {
+      "id": 4,
+      "employeeId": "NV0019",
+      "customerId": "KH0013",
+      "serviceId": "DV0006",
+      "startDay": "17/03/2017",
+      "endDay": "10/04/2016",
+      "deposit": 500000,
+      "total": null
+    },
+    {
+      "id": 5,
+      "employeeId": "NV003",
+      "customerId": "KH003",
+      "serviceId": "DV0005",
+      "startDay": "21/09/2015",
+      "endDay": "30/01/2019",
+      "deposit": 500000,
+      "total": null
+    },
+    {
+      "id": 6,
+      "employeeId": "NV004",
+      "customerId": "KH001",
+      "serviceId": "DV0004",
+      "startDay": "14/12/2015",
+      "endDay": "29/06/2019",
+      "deposit": 500000,
+      "total": null
+    },
+    {
+      "id": 7,
+      "employeeId": "NV0013",
+      "customerId": "KH005",
+      "serviceId": "DV0006",
+      "startDay": "06/11/2019",
+      "endDay": "16/02/2018",
+      "deposit": 500000,
+      "total": null
+    },
+    {
+      "id": 8,
+      "employeeId": "NV008",
+      "customerId": "KH008",
+      "serviceId": "DV0008",
+      "startDay": "10/02/2016",
+      "endDay": "22/02/2017",
+      "deposit": 500000,
+      "total": null
+    },
+    {
+      "id": 9,
+      "employeeId": "NV005",
+      "customerId": "KH0019",
+      "serviceId": "DV0007",
+      "startDay": "05/06/2019",
+      "endDay": "11/06/2017",
+      "deposit": 500000,
+      "total": null
+    },
+    {
+      "id": 10,
+      "employeeId": "NV008",
+      "customerId": "KH0012",
+      "serviceId": "DV0006",
+      "startDay": "18/05/2015",
+      "endDay": "26/10/2018",
+      "deposit": 500000,
+      "total": null
+    },
+    {
+      "employeeId": "fsa",
+      "customerId": "fdasf",
+      "serviceId": "dfas",
+      "startDay": null,
+      "endDay": null,
+      "deposit": null,
+      "total": null,
+      "id": 11
+    }
+  ]
+}

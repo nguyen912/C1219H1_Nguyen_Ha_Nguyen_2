@@ -1,0 +1,147 @@
+
+<hr>
+<button type="button" class="btn btn-success" (click)="isShowForm = !isShowForm">Add Service</button>
+<div *ngIf="isShowForm">
+  <form (ngSubmit)="onSubmit();" [formGroup]="serviceForm">
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Service ID</label>
+      <div class="col-sm-10">
+        <input class="form-control" placeholder="service ID" formControlName="serviceId">
+      </div>
+    </div>
+    <fieldset class="form-group">
+      <div class="row">
+        <legend class="col-form-label col-sm-2 pt-0">Service Name</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" formControlName="serviceName" name="serviceName" value="Villa" checked>
+            <label class="form-check-label">
+              Villa
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" formControlName="serviceName" name="serviceName" value="House">
+            <label class="form-check-label">
+              House
+            </label>
+          </div>
+          <div class="form-check disabled">
+            <input class="form-check-input" type="radio" formControlName="serviceName" name="serviceName" value="Room">
+            <label class="form-check-label">
+              Room
+            </label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Room Area</label>
+      <div class="col-sm-10">
+        <input class="form-control" placeholder="Room Area" formControlName="roomArea">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Number of Floors</label>
+      <div class="col-sm-10">
+        <input class="form-control" placeholder="Number of Floors" formControlName="floors">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Max People</label>
+      <div class="col-sm-10">
+        <input class="form-control" placeholder="Max People" formControlName="maxPeople">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Rent Cost</label>
+      <div class="col-sm-10">
+        <input class="form-control" placeholder="Rent Cost" formControlName="rentCost">
+      </div>
+    </div>
+    <fieldset class="form-group">
+      <div class="row">
+        <legend class="col-form-label col-sm-2 pt-0">Rent Type</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" formControlName="rentTypeId" name="rentTypeId" value=1 checked>
+            <label class="form-check-label">
+              Hour
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" formControlName="rentTypeId" name="rentTypeId" value=2>
+            <label class="form-check-label">
+              Day
+            </label>
+          </div>
+          <div class="form-check disabled">
+            <input class="form-check-input" type="radio" formControlName="rentTypeId" name="rentTypeId" id="silver" value=3>
+            <label class="form-check-label" for="silver">
+              Month
+            </label>
+          </div>
+          <div class="form-check disabled">
+            <input class="form-check-input" type="radio" formControlName="rentTypeId" name="rentTypeId" id="member" value=4>
+            <label class="form-check-label" for="member">
+              Year
+            </label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Status</label>
+      <div class="col-sm-10">
+        <input class="form-control" placeholder="status" formControlName="status">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </form>
+
+</div>
+<hr>
+
+<table>
+  <tr>
+    <th>Service ID</th>
+    <th>Service Name</th>
+    <th>Room Area</th>
+    <th>Floors</th>
+    <th>Max People</th>
+    <th>Rent Cost</th>
+    <th>Rent Type</th>
+    <th>Status</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+  <tr *ngFor="let service of services; index as i">
+    <td>{{service.serviceId}}</td>
+    <td>{{service.serviceName}}</td>
+    <td>{{service.roomArea}}</td>
+    <td>{{service.floors}}</td>
+    <td>{{service.maxPeople}}</td>
+    <td>{{service.rentCost}}</td>
+    <ng-container [ngSwitch]="service.rentTypeId">
+      <td *ngSwitchCase="1">Hour</td>
+      <td *ngSwitchCase="2">Day</td>
+      <td *ngSwitchCase="3">Month</td>
+      <td *ngSwitchCase="4">Year</td>
+    </ng-container>
+    <td>{{service.status}}</td>
+    <td>
+      <a class="btn text-primary">
+        <i class="fa fa-edit"></i>
+      </a>
+    </td>
+    <td>
+      <a class="btn text-danger">
+        <i class="fa fa-trash"></i>
+      </a>
+    </td>
+
+  </tr>
+</table>

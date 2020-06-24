@@ -1,0 +1,84 @@
+
+<form (ngSubmit)="onSubmit();" [formGroup]="editStudentForm">
+
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Tên sinh viên</label>
+    <div class="col-sm-10">
+      <input class="form-control" placeholder="Tên sinh viên" formControlName="ten_sinh_vien">
+      <p *ngIf="editStudentForm.controls.ten_sinh_vien.errors?.required && editStudentForm.controls.ten_sinh_vien.touched" class="text-danger">Bắt buộc nhập tên sinh viên!</p>
+      <p *ngIf="editStudentForm.controls.ten_sinh_vien.errors?.pattern && editStudentForm.controls.ten_sinh_vien.touched" class="text-danger">Không được nhập số hoặc ký tự đặc biệt!</p>
+    </div>
+  </div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0">Tên nhóm</legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" formControlName="ten_nhom" name="ten_nhom" id="nhom1" value="nhóm 1" checked>
+          <label class="form-check-label" for="nhom1">
+            Nhóm 1
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" formControlName="ten_nhom" name="ten_nhom" id="nhom2" value="nhóm 2">
+          <label class="form-check-label" for="nhom2">
+            Nhóm 2
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <input class="form-check-input" type="radio" formControlName="ten_nhom" name="ten_nhom" id="nhom3" value="nhóm 3">
+          <label class="form-check-label" for="nhom3">
+            Nhóm 3
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Tên đề tài</label>
+    <div class="col-sm-10">
+      <input class="form-control" placeholder="Tên đề tài" formControlName="ten_de_tai">
+      <p *ngIf="editStudentForm.controls.ten_de_tai.errors?.required && editStudentForm.controls.ten_de_tai.touched" class="text-danger">Bắt buộc nhập tên đề tài!</p>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">
+      Giáo viên hướng dẫn
+    </label>
+    <select class="form-control col-form-label" formControlName="giao_vien_huong_dan">
+      <option value="{{editStudentForm.value.giao_vien_huong_dan}}">{{editStudentForm.value.giao_vien_huong_dan}}</option>
+      <option value="Lê Hoàng Quốc Anh">Lê Hoàng Quốc Anh</option>
+      <option value="Nguyễn Lê Trần Nam">Nguyễn Lê Trần Nam</option>
+      <option value="Nguyễn Lê Hoài An">Nguyễn Lê Hoài An</option>
+    </select>
+
+  </div>
+
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input class="form-control" placeholder="Email" formControlName="email">
+      <p *ngIf="editStudentForm.controls.email.errors?.required && editStudentForm.controls.email.touched" class="text-danger">Bắt buộc nhập email!</p>
+      <p *ngIf="editStudentForm.controls.email.errors?.email && editStudentForm.controls.email.touched" class="text-danger">Email không đúng định dạng</p>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Số điện thoại</label>
+    <div class="col-sm-10">
+      <input class="form-control" placeholder="Số điện thoại" formControlName="so_dien_thoai">
+      <p *ngIf="editStudentForm.controls.so_dien_thoai.errors?.required && editStudentForm.controls.so_dien_thoai.touched" class="text-danger">Bắt buộc nhập số điện thoại!</p>
+      <p *ngIf="editStudentForm.controls.so_dien_thoai.errors?.pattern && editStudentForm.controls.so_dien_thoai.touched" class="text-danger">Số điện thoại không đúng định dạng!</p>
+    </div>
+  </div>
+
+  <div class="form-group row d-flex justify-content-center">
+    <div class="">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    <div class="">
+      <button type="submit" class="btn btn-danger" (click)="cancel();">Cancel</button>
+    </div>
+  </div>
+
+</form>

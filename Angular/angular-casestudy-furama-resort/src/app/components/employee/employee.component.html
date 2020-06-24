@@ -1,0 +1,247 @@
+
+<hr>
+<button type="button" class="btn btn-success" (click)="isShowForm = !isShowForm">Add employee</button>
+<div *ngIf="isShowForm">
+  <form (ngSubmit)="onSubmit();" [formGroup]="employeeForm">
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">employee ID</label>
+      <div class="col-sm-10">
+        <input class="form-control" placeholder="employee ID" formControlName="employeeId">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Full Name</label>
+      <div class="col-sm-10">
+        <input class="form-control" placeholder="Full Name" formControlName="fullName">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Date of Birth</label>
+      <div class="col-sm-10">
+        <input class="form-control" placeholder="Birthday" formControlName="dob">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">ID Card Number</label>
+      <div class="col-sm-10">
+        <input class="form-control" placeholder="ID Card Number" formControlName="idCardNum">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Phone Number</label>
+      <div class="col-sm-10">
+        <input class="form-control" placeholder="Phone Number" formControlName="phoneNumber">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-10">
+        <input class="form-control" placeholder="Email" formControlName="email">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Address</label>
+      <div class="col-sm-10">
+        <input class="form-control" placeholder="Address" formControlName="address">
+      </div>
+    </div>
+    <fieldset class="form-group">
+      <div class="row">
+        <legend class="col-form-label col-sm-2 pt-0">Position</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" formControlName="positionId" name="positionId" id="diamond" value=1 checked>
+            <label class="form-check-label" for="diamond">
+              Director
+
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" formControlName="positionId" name="positionId" id="gold" value=2>
+            <label class="form-check-label" for="gold">
+              Manager
+
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" formControlName="positionId" name="positionId" id="silver" value=3>
+            <label class="form-check-label" for="silver">
+              Leader
+
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" formControlName="positionId" name="positionId" id="member" value=4>
+            <label class="form-check-label" for="member">
+              Staff
+
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" formControlName="positionId" name="positionId" value=5>
+            <label class="form-check-label" for="member">
+              Trainee
+
+            </label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset class="form-group">
+      <div class="row">
+        <legend class="col-form-label col-sm-2 pt-0">Degree</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" formControlName="degreeId" name="degreeId" value=1 checked>
+            <label class="form-check-label" for="diamond">
+              Master
+
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" formControlName="degreeId" name="degreeId" value=2>
+            <label class="form-check-label" for="gold">
+              Bachelor
+
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" formControlName="degreeId" name="degreeId" value=3>
+            <label class="form-check-label" for="silver">
+              Associate
+
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" formControlName="degreeId" name="degreeId" value=4>
+            <label class="form-check-label" for="member">
+              Undergraduate
+            </label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset class="form-group">
+      <div class="row">
+        <legend class="col-form-label col-sm-2 pt-0">Department</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" formControlName="departmentId" name="departmentId" value=1 checked>
+            <label class="form-check-label" for="diamond">
+              Services
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" formControlName="departmentId" name="departmentId" value=2>
+            <label class="form-check-label" for="gold">
+              Legal
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" formControlName="departmentId" name="departmentId" value=3>
+            <label class="form-check-label" for="silver">
+              Research and Development
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" formControlName="departmentId" name="departmentId" value=4>
+            <label class="form-check-label" for="member">
+              Training
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" formControlName="departmentId" name="departmentId" value=5>
+            <label class="form-check-label" for="member">
+              Business Development
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" formControlName="departmentId" name="departmentId" value=6>
+            <label class="form-check-label" for="member">
+              Sales
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" formControlName="departmentId" name="departmentId" value=7>
+            <label class="form-check-label" for="member">
+              Marketing
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" formControlName="departmentId" name="departmentId" value=8>
+            <label class="form-check-label" for="member">
+              Support
+            </label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </form>
+
+</div>
+<hr>
+
+<table>
+  <tr>
+    <th>employee ID</th>
+    <th>Full Name</th>
+    <th>Date of Birth</th>
+    <th>ID Card Number</th>
+    <th>Phone Number</th>
+    <th>Email</th>
+    <th>Address</th>
+    <th>Position</th>
+    <th>Degree</th>
+    <th>Department</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+  <tr *ngFor="let employee of employees; index as i">
+    <td>{{employee.employeeId}}</td>
+    <td>{{employee.fullName}}</td>
+    <td>{{employee.dob}}</td>
+    <td>{{employee.idCardNum}}</td>
+    <td>{{employee.phoneNumber}}</td>
+    <td>{{employee.email}}</td>
+    <td>{{employee.address}}</td>
+    <ng-container [ngSwitch]="employee.positionId">
+      <td *ngSwitchCase="1">Director</td>
+      <td *ngSwitchCase="2">Manager</td>
+      <td *ngSwitchCase="3">Leader</td>
+      <td *ngSwitchCase="4">Employee</td>
+      <td *ngSwitchCase="5">Trainee</td>
+    </ng-container>
+    <ng-container [ngSwitch]="employee.degreeId">
+      <td *ngSwitchCase="1">Master</td>
+      <td *ngSwitchCase="2">Bachelor</td>
+      <td *ngSwitchCase="3">Associate</td>
+      <td *ngSwitchCase="4">Undergraduate</td>
+    </ng-container>
+    <ng-container [ngSwitch]="employee.departmentId">
+      <td *ngSwitchCase="1">Services</td>
+      <td *ngSwitchCase="2">Legal</td>
+      <td *ngSwitchCase="3">Research and Development</td>
+      <td *ngSwitchCase="4">Training</td>
+      <td *ngSwitchCase="5">Business Development</td>
+      <td *ngSwitchCase="6">Sales</td>
+      <td *ngSwitchCase="7">Marketing</td>
+      <td *ngSwitchCase="8">Support</td>
+    </ng-container>
+    <td>
+      <a class="btn text-primary">
+        <i class="fa fa-edit"></i>
+      </a>
+    </td>
+    <td>
+      <a class="btn text-danger">
+        <i class="fa fa-trash"></i>
+      </a>
+    </td>
+
+  </tr>
+</table>

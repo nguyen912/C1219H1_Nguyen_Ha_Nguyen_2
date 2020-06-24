@@ -1,0 +1,54 @@
+
+<hr>
+  <h3 class="d-flex justify-content-center">Customer List</h3>
+  <div class="row justify-content-between">
+    <button type="button" class="btn btn-success" [routerLink]="['/customer-create']">Add Customer</button>
+    <!-- Search form -->
+      <input [(ngModel)]="term" class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
+             aria-label="Search">
+      <button><i class="fas fa-search" aria-hidden="true"></i></button>
+</div>
+<hr>
+
+<!--TABLE-->
+<table>
+  <tr>
+    <th>Customer ID</th>
+    <th>Full Name</th>
+    <th>Date of Birth</th>
+    <th>ID Card Number</th>
+    <th>Phone Number</th>
+    <th>Email</th>
+    <th>Address</th>
+    <th>Customer Type</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+  <tr *ngFor="let customer of customers |filter:term | paginate: { itemsPerPage: 10, currentPage: p }; index as i">
+    <td>{{customer.id}}</td>
+    <td>{{customer.fullName}}</td>
+    <td>{{customer.dob |date: 'dd/MM/yyyy'}}</td>
+    <td>{{customer.idCardNum}}</td>
+    <td>{{customer.phoneNumber}}</td>
+    <td>{{customer.email}}</td>
+    <td>{{customer.address}}</td>
+    <ng-container [ngSwitch]="customer.customerTypeId">
+      <td *ngSwitchCase="1">Diamond</td>
+      <td *ngSwitchCase="2">Gold</td>
+      <td *ngSwitchCase="3">Silver</td>
+      <td *ngSwitchCase="4">Member</td>
+    </ng-container>
+    <td>
+      <a class="btn text-primary">
+        <i class="fa fa-edit"></i>
+      </a>
+    </td>
+    <td>
+      <a class="btn text-danger" (click)="deleteCustomer(i)">
+        <i class="fa fa-trash"></i>
+      </a>
+    </td>
+
+  </tr>
+</table>
+<pagination-controls (pageChange)="p = $event"></pagination-controls>

@@ -1,0 +1,40 @@
+<div class="wrapper">
+  <!-- Sidebar  -->
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <h3>Furama Resort</h3>
+    </div>
+
+    <ul class="list-unstyled components">
+      <li>
+        <a routerLink="/">Home</a>
+      </li>
+      <li>
+        <a routerLink="/customers">Customer</a>
+      </li>
+      <li>
+        <a routerLink="/employees">Employee</a>
+      </li>
+      <li>
+        <a routerLink="/services">Service</a>
+      </li>
+      <li>
+        <a routerLink="/contracts">Contract</a>
+      </li>
+      <li>
+        <a routerLink="/detail-contracts">Detail Contract</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Page Content  -->
+  <div id="content">
+    <div class="container-fluid">
+      <button type="button" id="sidebarCollapse" class="btn btn-light">
+        <i class="fas fa-align-justify"></i>
+      </button>
+    </div>
+
+    <router-outlet></router-outlet>
+  </div>
+</div>

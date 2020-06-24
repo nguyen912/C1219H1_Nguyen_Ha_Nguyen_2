@@ -1,0 +1,87 @@
+
+<hr>
+<button type="button" class="btn btn-success" (click)="isShowForm = !isShowForm">Add contract</button>
+<div *ngIf="isShowForm">
+  <form (ngSubmit)="onSubmit();" [formGroup]="contractForm">
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Employee Id</label>
+      <div class="col-sm-10">
+        <input class="form-control" placeholder="Employee Id" formControlName="employeeId">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Customer Id</label>
+      <div class="col-sm-10">
+        <input class="form-control" placeholder="Customer I" formControlName="customerId">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Service Id</label>
+      <div class="col-sm-10">
+        <input class="form-control" placeholder="Service Id" formControlName="serviceId">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Start Day</label>
+      <div class="col-sm-10">
+        <input class="form-control" placeholder="Start Dayr" formControlName="startDay">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">End Day</label>
+      <div class="col-sm-10">
+        <input class="form-control" placeholder="End Day" formControlName="endDay">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Deposit</label>
+      <div class="col-sm-10">
+        <input class="form-control" placeholder="Deposit" formControlName="deposit">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </form>
+
+</div>
+<hr>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Employee Id</th>
+    <th>Customer Id</th>
+    <th>Service Id</th>
+    <th>Start Day</th>
+    <th>End Day</th>
+    <th>Address</th>
+    <th>Deposit</th>
+    <th>Total</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+  <tr *ngFor="let contract of contracts; index as i">
+    <td>{{contract.id}}</td>
+    <td>{{contract.employeeId}}</td>
+    <td>{{contract.customerId}}</td>
+    <td>{{contract.serviceId}}</td>
+    <td>{{contract.startDay}}</td>
+    <td>{{contract.endDay}}</td>
+    <td>{{contract.deposit}}</td>
+    <td>{{contract.total}}</td>
+    <td>
+      <a class="btn text-primary">
+        <i class="fa fa-edit"></i>
+      </a>
+    </td>
+    <td>
+      <a class="btn text-danger">
+        <i class="fa fa-trash"></i>
+      </a>
+    </td>
+
+  </tr>
+</table>

@@ -1,0 +1,24 @@
+{
+  "customers": [
+    {"id": 1, "customerId":"KH0001","customerTypeId":3,"fullName":"Floris Snodin","dob":"1999-03-27","idCardNum":617184231,"phoneNumber":"439 718 8183","email":"fsnodin0@hud.gov","address":"8120 Pennsylvania Circle Vinh"},
+    {"id": 2, "customerId":"KH0002","customerTypeId":1,"fullName":"Alayne Reeds","dob":"1988-01-27","idCardNum":613339347,"phoneNumber":"118 231 0143","email":"areeds1@dailymotion.com","address":"16349 Milwaukee Terrace Quang Ngai"},
+    {"id": 3, "customerId":"KH0003","customerTypeId":1,"fullName":"Marshall Lunt","dob":"1982-08-23","idCardNum":138324817,"phoneNumber":"710 417 7446","email":"mlunt2@yahoo.co.jp","address":"6110 Maywood Lane Quang Tri"},
+    {"id": 4, "customerId":"KH0004","customerTypeId":1,"fullName":"Hansiain Balwin","dob":"1962-07-03","idCardNum":119668368,"phoneNumber":"164 112 2161","email":"hbalwin3@gov.uk","address":"4 Waubesa Hill Da Nang"},
+    {"id": 5, "customerId":"KH0001","customerTypeId":2,"fullName":"Colleen Goatcher","dob":"1992-01-17","idCardNum":238710911,"phoneNumber":"494 119 7626","email":"cgoatcher4@indiegogo.com","address":"22 Eastlawn Avenue Da Nang"},
+    {"id": 6, "customerId":"KH0006","customerTypeId":1,"fullName":"Silvia Hawkey","dob":"1964-07-29","idCardNum":231273470,"phoneNumber":"983 712 8728","email":"shawkey1@webeden.co.uk","address":"7 Ronald Regan Trail Da Nang"},
+    {"id": 7, "customerId":"KH0007","customerTypeId":4,"fullName":"Koressa Capenor","dob":"1960-01-02","idCardNum":181964184,"phoneNumber":"930 497 9763","email":"kcapenor6@stanford.edu","address":"71131 Mccormick Hill Quang Tri"},
+    {"id": 8, "customerId":"KH0008","customerTypeId":1,"fullName":"Aila Van den Velden","dob":"1980-12-16","idCardNum":208162439,"phoneNumber":"733 373 4733","email":"avan7@dyndns.org","address":"43 Ludington Avenue Da Nang"},
+    {"id": 9, "customerId":"KH0009","customerTypeId":3,"fullName":"Thayne Andryushin","dob":"1987-10-19","idCardNum":273021884,"phoneNumber":"249 720 6146","email":"tandryushin8@gnu.org","address":"1920 Beilfuss Court Vinh"},
+    {"id": 10, "customerId":"KH0010","customerTypeId":2,"fullName":"Katuscha Delamaine","dob":"2000-07-02","idCardNum":117010117,"phoneNumber":"790 711 7701","email":"kdelamaine9@apache.org","address":"2018 Southridge Trail Da Nang"},
+    {"id": 11, "customerId":"KH0011","customerTypeId":1,"fullName":"Casar Bomfield","dob":"1991-01-08","idCardNum":324100184,"phoneNumber":"101 470 1327","email":"cbomfielda@webs.com","address":"0 La Follette Lane Vinh"},
+    {"id": 12, "customerId":"KH0012","customerTypeId":4,"fullName":"Creigh Bims","dob":"1983-04-10","idCardNum":609906317,"phoneNumber":"779 340 1030","email":"cbimsb@dyndns.org","address":"0 Mcguire Road Vinh"},
+    {"id": 13, "customerId":"KH0013","customerTypeId":2,"fullName":"Johannes Eales","dob":"1961-04-30","idCardNum":308107363,"phoneNumber":"191 913 3128","email":"jealesc@kickstarter.com","address":"110 Roxbury Terrace Quang Ngai"},
+    {"id": 14, "customerId":"KH0014","customerTypeId":1,"fullName":"Isacco Schechter","dob":"1979-08-27","idCardNum":616928438,"phoneNumber":"869 361 2988","email":"ischechterd@naver.com","address":"268 Grasskamp Terrace Quang Ngai"},
+    {"id": 15, "customerId":"KH0011","customerTypeId":3,"fullName":"Cristionna Groneway","dob":"2000-09-12","idCardNum":676104971,"phoneNumber":"711 196 0210","email":"cgronewaye@fotki.com","address":"11 Westport Trail Da Nang"},
+    {"id": 16, "customerId":"KH0016","customerTypeId":1,"fullName":"Brear Blampy","dob":"1977-11-11","idCardNum":707447346,"phoneNumber":"810 173 9002","email":"bblampyf@edublogs.org","address":"90341 Crescent Oaks Terrace Quang Ngai"},
+    {"id": 17, "customerId":"KH0017","customerTypeId":1,"fullName":"Yolande Vernay","dob":"1968-11-28","idCardNum":132413368,"phoneNumber":"277 482 6160","email":"yvernayg@ox.ac.uk","address":"11 Randy Junction Quang Tri"},
+    {"id": 18, "customerId":"KH0018","customerTypeId":4,"fullName":"Dexter Chamberlaine","dob":"1991-08-30","idCardNum":989638463,"phoneNumber":"331 307 8093","email":"dchamberlaineh@topsy.com","address":"31011 Reindahl Park Da Nang"},
+    {"id": 19, "customerId":"KH0019","customerTypeId":4,"fullName":"Lucienne Underhill","dob":"1971-11-07","idCardNum":927074862,"phoneNumber":"191 169 1219","email":"lunderhilli@rediff.com","address":"4 Troy Way Quang Ngai"},
+    {"id": 20, "customerId":"KH0020","customerTypeId":1,"fullName":"Loren Pilbeam","dob":"1990-02-24","idCardNum":273320196,"phoneNumber":"931 979 9111","email":"lpilbeamj@themeforest.net","address":"66 Farmco Circle Quang Tri"}
+  ]
+}
